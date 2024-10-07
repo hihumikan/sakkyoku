@@ -1,0 +1,9 @@
+[Unit]
+Description=Continuous Deployment for docker-compose
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/sakkyoku update
+
+[Install]
+WantedBy=default.target

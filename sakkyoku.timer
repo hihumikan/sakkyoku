@@ -1,0 +1,9 @@
+[Unit]
+Description=Run sakkyoku update every minute
+
+[Timer]
+OnUnitActiveSec=1min
+Unit=sakkyoku.service
+
+[Install]
+WantedBy=timers.target
